@@ -508,7 +508,7 @@ class Hello(object):
     #@+node:amd.20150415215023.1: *3* mygeartest2
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
-    def mygeartest2(self, N=20, M=5, P=15):
+    def mygeartest2(self, N=20, O=20, I=20, M=5, P=15):
         outstring = '''
     <!DOCTYPE html> 
     <html>
@@ -521,6 +521,14 @@ class Hello(object):
     </head>
     <!-- 啟動 brython() -->
     <body onload="brython()">
+
+    <form method=POST action=mygeartest2>
+    齒數1:<input type=text name=N><br />
+    齒數2:<input type=text name=O><br />
+    齒數3:<input type=text name=I><br />
+    模數:<input type=text name=M><br />
+    壓力角:<input type=text name=P><br />
+    <input type=submit value=send>
 
     <!-- 以下為 canvas 畫圖程式 -->
     <script type="text/python">
@@ -540,15 +548,15 @@ class Hello(object):
     # Gear(midx, midy, rp, n=20, pa=20, color="black"):
     # 模數決定齒的尺寸大小, 囓合齒輪組必須有相同的模數與壓力角
     # 壓力角 pa 單位為角度
-    pa = 20
+    pa = '''+str(P)+'''
     # m 為模數
-    m = 20
+    m = '''+str(M)+'''
     # 第1齒輪齒數
-    n_g1 = 17
+    n_g1 = '''+str(N)+'''
     # 第2齒輪齒數
-    n_g2 = 11
+    n_g2 = '''+str(O)+'''
     # 第3齒輪齒數
-    n_g3 = 13
+    n_g3 = '''+str(I)+'''
     # 計算兩齒輪的節圓半徑
     rp_g1 = m*n_g1/2
     rp_g2 = m*n_g2/2
