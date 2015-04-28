@@ -12,7 +12,7 @@
    * [40223130](scrum_2.md)
    * [40223128](scrum_3.md)
    * [40223121](scrum_4.md)
-* [第三週](di_er_zhou.md)
+* [第二週](di_er_zhou.md)
 * [第四週](di_si_zhou.md)
 * [第六週](di_liu_zhou.md)
    * 第七週
