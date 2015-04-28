@@ -9,7 +9,7 @@
    * [40223141](product_owner.md)
    * [40223134](scrumaster.md)
    * [40223133](scrum_1.md)
-   * [scrum_2](scrum_2.md)
+   * [40223130](scrum_2.md)
    * [scrum_3](scrum_3.md)
    * [scrum_4](scrum_4.md)
 
